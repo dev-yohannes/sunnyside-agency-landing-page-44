@@ -43,26 +43,8 @@ a:not([class]) {
   text-decoration: none;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// nav ul li a,
-// footer a {
-//   font-family: var(--body-font);
-// }
-
-// p,
-// button {
-//   font-family: var(--heading-font);
-// }
-
 /* Make images easier to work with */
-img,
-picture,
-svg {
+img {
   max-width: 100%;
   display: block;
 }
