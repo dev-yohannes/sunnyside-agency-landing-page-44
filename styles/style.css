@@ -43,9 +43,7 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture,
-svg {
+img {
   max-width: 100%;
   display: block;
 }
@@ -72,8 +70,108 @@ svg {
   --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
-  --grayish-blue: hsl(232, 10%, 55%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
   --barlow: "Barlow", sans-serif;
   --fraunces: "Fraunces", serif;
+}
+
+.nav-main-background {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+.nav-main-background nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 10vh;
+}
+.nav-main-background nav h2 {
+  font-size: 30px;
+  font-family: var(--barlow);
+  font-weight: 600;
+}
+.nav-main-background nav .hamburger .bars {
+  height: 2px;
+  width: 30px;
+  margin: 5px;
+  background-color: var(--white);
+}
+.nav-main-background main {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.nav-main-background main h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: var(--fraunces);
+  font-weight: 800;
+}
+
+.cards .card-1 .first .text,
+.cards .card-1 .second .text,
+.cards .card-2 .first .text,
+.cards .card-2 .second .text,
+.cards .card-3 .first .text,
+.cards .card-3 .second .text {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
+}
+.cards .card-1 h2,
+.cards .card-1 a,
+.cards .card-2 h2,
+.cards .card-2 a,
+.cards .card-3 h2,
+.cards .card-3 a {
+  font-family: var(--fraunces);
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+}
+.cards .card-1 p,
+.cards .card-2 p,
+.cards .card-3 p {
+  color: var(--dark-grayish-blue);
+  font-family: var(--barlow);
+  margin: 30px 0;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 18px;
+}
+.cards .card-1 h2,
+.cards .card-2 h2,
+.cards .card-3 h2 {
+  font-size: 40px;
+}
+.cards .card-1 a,
+.cards .card-2 a,
+.cards .card-3 a {
+  text-transform: uppercase;
+  border-bottom: 10px solid var(--yellow);
+}
+.cards .card-3 .first,
+.cards .card-3 .second {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.cards .card-3 .first {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+}
+.cards .card-3 .second {
+  background-image: url("../images/desktop/image-photography.jpg");
 }/*# sourceMappingURL=style.css.map */
