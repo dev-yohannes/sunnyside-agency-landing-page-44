@@ -22,7 +22,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 85vh;
+  height: 100vh;
 
   nav {
     display: flex;
@@ -83,7 +83,7 @@
       width: 80%;
       margin: 0 auto;
       padding: 60px 0;
-      text-align: center;
+      // text-align: center;
     }
 
     h2,
@@ -288,6 +288,11 @@ footer {
   }
 
   .testimonials {
+    h3 {
+      font-size: 20px;
+      margin-bottom: 80px;
+    }
+
     .testimoni-1,
     .testimoni-2,
     .testimoni-3 {
@@ -386,11 +391,16 @@ footer {
   }
 
   .testimonials {
-    margin: 100px 0 200px;
+    width: 80%;
+    margin: 100px auto 100px;
 
     .tesimoni-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  .imgs {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
