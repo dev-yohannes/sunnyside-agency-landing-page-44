@@ -35,7 +35,12 @@
     h2 {
       font-size: 30px;
       font-family: var(--barlow);
-      font-weight: 600;
+      font-weight: 900;
+      color: var(--white);
+    }
+
+    .links {
+      display: none;
     }
 
     .hamburger {
@@ -64,6 +69,7 @@
       text-transform: uppercase;
       font-family: var(--fraunces);
       font-weight: 800;
+      color: var(--white);
     }
   }
 }
@@ -106,6 +112,28 @@
     }
   }
 
+  .card-1,
+  .card-2 {
+    .first {
+      background-position: center;
+      background-size: cover;
+      height: 60vh;
+      //
+    }
+  }
+
+  .card-1 {
+    .first {
+      background-image: url("../images/desktop/image-transform.jpg");
+    }
+  }
+
+  .card-2 {
+    .first {
+      background-image: url("../images/desktop/image-stand-out.jpg");
+    }
+  }
+
   .card-3 {
     .first,
     .second {
@@ -125,7 +153,6 @@
 
     .first {
       background-image: url("../images/desktop/image-graphic-design.jpg");
-      // width: 100%;
     }
 
     .second {
@@ -259,9 +286,65 @@ footer {
       }
     }
   }
+
+  .testimonials {
+    .testimoni-1,
+    .testimoni-2,
+    .testimoni-3 {
+      max-width: 400px;
+
+      p {
+        max-width: 400px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 958px) {
+  .nav-main-background {
+    nav {
+      height: 15vh;
+
+      .links {
+        display: block;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+
+          li {
+            list-style: none;
+
+            a {
+              color: var(--white);
+              font-family: var(--barlow);
+            }
+          }
+
+          button {
+            padding: 15px 35px;
+            font-family: var(--fraunces);
+            font-weight: 900;
+            background-color: var(--white);
+            border: none;
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
+
+    main {
+      gap: 90px;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
   .cards {
     .card-1,
     .card-2,
@@ -269,19 +352,19 @@ footer {
       display: grid;
       align-items: center;
       grid-template-columns: repeat(2, 1fr);
-      max-height: 600px;
+      // max-height: 600px;
 
       .first,
       .second {
         .text {
           padding: 20px 0;
-          max-width: 500px;
+          // max-width: 500px;
         }
       }
 
       .first {
         img {
-          max-height: 500px;
+          // max-height: 500px;
         }
       }
 
@@ -305,6 +388,15 @@ footer {
       .second {
         order: 1;
       }
+    }
+  }
+
+  .testimonials {
+    margin: 100px 0 200px;
+
+    .tesimoni-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
