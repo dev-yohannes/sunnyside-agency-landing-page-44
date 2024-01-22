@@ -166,7 +166,16 @@ img {
 .cards .card-3 .second {
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.cards .card-3 .first .text,
+.cards .card-3 .second .text {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 20px;
 }
 .cards .card-3 .first {
   background-image: url("../images/desktop/image-graphic-design.jpg");
@@ -275,4 +284,63 @@ footer .socials svg {
   width: 40px;
   margin: 5px;
   fill: var(--dark-desaturated-cyan-graphic-design);
+}
+
+@media screen and (min-width: 720px) {
+  .cards .card-1 img,
+  .cards .card-2 img,
+  .cards .card-3 img {
+    width: 100%;
+  }
+  .cards .card-1 .first .text,
+  .cards .card-1 .second .text,
+  .cards .card-2 .first .text,
+  .cards .card-2 .second .text,
+  .cards .card-3 .first .text,
+  .cards .card-3 .second .text {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 958px) {
+  .cards .card-1,
+  .cards .card-2,
+  .cards .card-3 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 600px;
+  }
+  .cards .card-1 .first .text,
+  .cards .card-1 .second .text,
+  .cards .card-2 .first .text,
+  .cards .card-2 .second .text,
+  .cards .card-3 .first .text,
+  .cards .card-3 .second .text {
+    padding: 20px 0;
+    max-width: 500px;
+  }
+  .cards .card-1 .first img,
+  .cards .card-2 .first img,
+  .cards .card-3 .first img {
+    max-height: 500px;
+  }
+  .cards .card-1 p,
+  .cards .card-2 p,
+  .cards .card-3 p {
+    margin: 30px 0;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .cards .card-1 h2,
+  .cards .card-2 h2,
+  .cards .card-3 h2 {
+    font-size: 40px;
+  }
+  .cards .card-2 .first {
+    order: 2;
+  }
+  .cards .card-2 .second {
+    order: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
