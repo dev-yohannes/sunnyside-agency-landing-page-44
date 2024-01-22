@@ -111,11 +111,21 @@
     .second {
       background-size: cover;
       background-position: center;
-      height: 80vh;
+      height: 90vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .text {
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 20px;
+      }
     }
 
     .first {
       background-image: url("../images/desktop/image-graphic-design.jpg");
+      // width: 100%;
     }
 
     .second {
@@ -228,6 +238,73 @@ footer {
       width: 40px;
       margin: 5px;
       fill: var(--dark-desaturated-cyan-graphic-design);
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cards {
+    .card-1,
+    .card-2,
+    .card-3 {
+      img {
+        width: 100%;
+      }
+      .first,
+      .second {
+        .text {
+          // padding: 60px 0;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 958px) {
+  .cards {
+    .card-1,
+    .card-2,
+    .card-3 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(2, 1fr);
+      max-height: 600px;
+
+      .first,
+      .second {
+        .text {
+          padding: 20px 0;
+          max-width: 500px;
+        }
+      }
+
+      .first {
+        img {
+          max-height: 500px;
+        }
+      }
+
+      p {
+        margin: 30px 0;
+        line-height: 1.5;
+        font-weight: 600;
+        font-size: 18px;
+      }
+
+      h2 {
+        font-size: 40px;
+      }
+    }
+
+    .card-2 {
+      .first {
+        order: 2;
+      }
+
+      .second {
+        order: 1;
+      }
     }
   }
 }
